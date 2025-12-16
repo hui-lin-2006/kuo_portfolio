@@ -1,0 +1,186 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>My Profile</title> 
+    <style>
+      
+    </style>
+    <script src="script.js" defer></script> 
+</head> 
+<body> 
+     
+    <button id="themeBtn">Toggle Dark Mode</button> 
+ 
+    <!-- Simple Navigation --> 
+    <center> 
+    <div class="navbar"> 
+        <h2> 
+            <a href="#home">Home</a> | 
+            <a href="#about">About Me</a> 
+        </h2> 
+    </div> 
+    </center> 
+ 
+    <hr> 
+     
+ 
+    <center> 
+    <div class="quote-section"> 
+        <h3>Daily Motivation</h3> 
+        <p id="quoteDisplay">Click the button to get inspired!</p> 
+        <button id="quoteBtn">Generate Quote</button> 
+    </div> 
+    </center> 
+    <hr> 
+     
+    <!-- 2-Column Layout --> 
+    <center> 
+        <table> 
+        <tr id="main-content"> 
+ 
+            <!-- LEFT COLUMN --> 
+            <td class="left_column"> 
+                <div id="home"> 
+                    <center> 
+                    <img src="pic.JPG" class="kelly"><br> 
+                    </center> 
+                    <div class="profile_name"> 
+                        <h2>Kuo, Hui-Lin</h2> 
+                        <span id="jobTitle">NU Fairview IT student</span> 
+                        <button id="editJobBtn">Edit Job Title</button> 
+                    </div> 
+                     
+                </div> 
+ 
+                <hr> 
+ 
+                <div> 
+                    <h3>Contact</h3> 
+                    <dl> 
+                        <div class="contact-line"> 
+                            <img src="email.png" class="email_pic"> 
+                              <dt>kuoh@students.nufairview.edu.ph</dt> 
+                        </div> 
+                        <div class="contact-line"> 
+                             <img src="call-13.png" class="call"> 
+                             <dt>0987878787</dt> 
+                        </div> 
+                        
+                       
+                        <div class="contact-line">  
+                            <img src="location.png" class="location_pic"> 
+                                <dt>SM Fairview Complex</dt> 
+                        </div>   
+                    </dl> 
+ 
+                </div> 
+ 
+                <hr> 
+ 
+                <div> 
+                    <h3 class="my_skill">Skills</h3>  
+                    <button id="toggleSkillsBtn">Hide Skills</button> 
+                    <div id="skillsSection"> 
+ 
+                    <dl> 
+                        <ul class="skill"> 
+                            <li> HTML</li> 
+                            <li> CSS</li> 
+                        
+                        </ul> 
+                    </dl> 
+                </div> 
+ 
+                </div> 
+            </td> 
+ 
+            <!-- RIGHT COLUMN --> 
+            <td class="right_column"> 
+                <div id="about"> 
+                     <h2>About Me</h2> 
+ 
+                    <p class="intro"> 
+                        A second year IT student who is hardworking and a self
+disciplined 
+                        person. Whenever I dedicate myself to something such as my 
+studies or 
+                        things that interest me, I give my full commitment and find it 
+hard 
+                        to give up or stop easily. 
+                    </p> 
+                     
+                </div> 
+ 
+                <hr> 
+ 
+                <div> 
+                    <h2>Experience</h2> 
+ 
+                    <p> 
+                        Programming foundations (Java & Python) 
+                        <ul> 
+                            <li>Completed Python exercises involving conditionals, 
+functions. </li> 
+                            <li>Developed application using Java (loops, 
+arrays).</li> 
+                        </ul> 
+                        Web fundamentals practice (HTML, CSS) 
+                        <ul> 
+                            <li> Practiced layout techniques including Flexbox and 
+Grid.</li> 
+                        </ul> 
+                        Developed website using Outsystems. 
+                    </p> 
+ 
+                    <hr> 
+                    <h2>Message Me</h2> 
+ 
+                    <form action="submit" method="post"> 
+                        <p> 
+                            Name:<br> 
+                            <input type="text" name="name" id=""nameField> 
+                        </p> 
+ 
+                        <p> 
+                            Email:<br> 
+                            <input type="email" name="email" id="emailField"> 
+                        </p> 
+                        <p> 
+                            Message:<br> 
+                            <textarea name="message" 
+maxlength="200"></textarea> 
+                        <p> 
+                         
+                        <p class="charater_size">Charaters left: <span 
+id="charCount">200</span></p> 
+                            <input type="submit" value="Send" onclick="return 
+validateForm()"> 
+                        </p> 
+                    </form> 
+                </div> 
+            </td> 
+ 
+        </tr> 
+    </table> 
+    </center> 
+    <hr> 
+ 
+    <!-- FOOTER --> 
+    <div> 
+ 
+        <p id="dateDisplay"></p> 
+ 
+        <p> 
+            <center> 
+                <strong class="foot">WebProg - Web Programming 2025</strong> 
+<br> 
+            </center> 
+        </p> 
+ 
+        
+ 
+        <br> 
+    </div> 
+ 
+</body> 
+</html>
